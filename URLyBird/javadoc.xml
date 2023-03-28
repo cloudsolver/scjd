@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="URLyBird" default="javadoc">
+    <target name="javadoc">
+        <javadoc destdir="doc\javadoc" access="package" source="1.4"
+            use="true" notree="false" nonavbar="false" noindex="false"
+            splitindex="true" author="true" version="true"
+            nodeprecatedlist="false" nodeprecated="false"
+            packagenames="suncertify.db,com.rohitsood.urlybird.client,com.rohitsood.urlybird,com.rohitsood.urlybird.util,com.rohitsood.urlybird.gui.reservation,com.rohitsood.urlybird.gui.widget,com.rohitsood.urlybird.gui.exit,com.rohitsood.urlybird.gui.manager,com.rohitsood.urlybird.gui.mode,com.rohitsood.urlybird.launcher,com.rohitsood.urlybird.gui.server,com.rohitsood.urlybird.gui.about,com.rohitsood.urlybird.gui.widget.button,com.rohitsood.urlybird.gui.search,com.rohitsood.urlybird.mode,com.rohitsood.urlybird.gui.help,com.rohitsood.urlybird.gui.record,com.rohitsood.urlybird.gui.widget.panel,com.rohitsood.urlybird.gui,com.rohitsood.urlybird.gui.widget.textfield,com.rohitsood.urlybird.gui.preferences,com.rohitsood.urlybird.server"
+            sourcepath="code"
+            classpath="bin;C:\tools\junit3.8.1\junit.jar" doctitle="URLyBird"/>
+    </target>
+</project>

@@ -1,0 +1,51 @@
+<project name="scjd" default="dist" basedir=".">
+<description>
+Builds the scjd jar
+</description>
+  <!-- set global properties for this build -->
+  <property name="src" location="code"/>
+  <property name="build" location="bin"/>
+  <property name="dist"  location="."/>
+  <property name="build.compiler" value="javac1.4"/>
+<property name="network-dist" location="C:\\Documents and Settings\\All Users\\Documents" />
+<property name="web-dist" location="C:\\tools\\Apache Tomcat 4.0\\webapps\\examples" />
+
+  <target name="init">
+    <!-- Create the time stamp -->
+
+    <tstamp/>
+	<delete dir="${build}"/>
+    <!-- Create the build directory structure used by compile -->
+    <mkdir dir="${build}"/>
+  </target>
+
+
+			<!-- JAVAC-->
+
+  <target name="compile" depends="init"
+        description="compile the source " >
+    <!-- Compile the java code from ${src} into ${build} -->
+    <javac debug="true" srcdir="${src}" destdir="${build}" classpath="C:\\tools\\junit3.7\\junit.jar"/>
+
+  </target>
+
+<!-- RMIC -->
+<target name="rmic"  depends="compile" >
+    <rmic classname="com.rohitsood.urlybird.server.DatabaseNetworkServerFactoryImpl" base="${build}" stubversion="1.4" iiop="false"/>
+    <rmic classname="com.rohitsood.urlybird.server.DatabaseNetworkServerImpl" base="${build}" stubversion="1.4" iiop="false" />
+</target>
+
+<!-- DIST -->
+  <target name="dist" depends="rmic">
+	<jar jarfile="${dist}/runme.jar" basedir="${build}">
+	 <manifest>
+		<attribute name="Built-By" value="Rohit Sood"/>
+		<attribute name="Main-Class" value="com.rohitsood.urlybird.Start"/>
+		<attribute name="Class-Path" value="."/>
+	</manifest>
+	</jar>
+	<copy file="runme.jar" todir="${network-dist}"/>
+<copy file="runme.jar" todir="${web-dist}"/>
+  </target>
+
+  </project>

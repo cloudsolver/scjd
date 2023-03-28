@@ -1,0 +1,4517 @@
+
+(object Petal
+    version    	46
+    _written   	"Rose 7.7.0204.3001"
+    charSet    	0)
+
+(object Class_Category "com"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"405DD9A70286"
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list
+	(object Class_Category "rohitsood"
+	    quid       	"405DD9A70291"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list
+		(object Class_Category "urlybird"
+		    quid       	"405DD9A70293"
+		    exportControl 	"Public"
+		    logical_models 	(list unit_reference_list
+			(object Class_Category "client"
+			    quid       	"405DD9A70295"
+			    exportControl 	"Public"
+			    logical_models 	(list unit_reference_list
+				(object Class "DatabaseClient"
+				    attributes 	(list Attribute_Set
+					(object Attribute
+					    tool       	"Java"
+					    name       	"BodyDanglingComment"
+					    value      	"")
+					(object Attribute
+					    tool       	"Java"
+					    name       	"GenerateFinalizer"
+					    value      	FALSE)
+					(object Attribute
+					    tool       	"Java"
+					    name       	"GenerateStaticInitializer"
+					    value      	FALSE)
+					(object Attribute
+					    tool       	"Java"
+					    name       	"GenerateInstanceInitializer"
+					    value      	FALSE)
+					(object Attribute
+					    tool       	"Java"
+					    name       	"GenerateDefaultConstructor"
+					    value      	FALSE)
+					(object Attribute
+					    tool       	"Java"
+					    name       	"ReadOnly"
+					    value      	FALSE)
+					(object Attribute
+					    tool       	"Java"
+					    name       	"Final"
+					    value      	FALSE)
+					(object Attribute
+					    tool       	"Java"
+					    name       	"Static"
+					    value      	FALSE)
+					(object Attribute
+					    tool       	"Java"
+					    name       	"Strictfp"
+					    value      	FALSE)
+					(object Attribute
+					    tool       	"Java"
+					    name       	"GenerateFullyQualifiedExtends"
+					    value      	"")
+					(object Attribute
+					    tool       	"Java"
+					    name       	"GenerateCode"
+					    value      	TRUE))
+				    quid       	"405DD9A70297"
+				    stereotype 	"Interface"
+				    superclasses 	(list inheritance_relationship_list
+					(object Inheritance_Relationship
+					    attributes 	(list Attribute_Set)
+					    quid       	"405DD9A7031C"
+					    supplier   	"Logical View::suncertify::db::DBMain"
+					    quidu      	"405DD9A702D9"))
+				    class_attributes 	(list class_attribute_list
+					(object ClassAttribute "NETWORK_MODE"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	TRUE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Transient"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Volatile"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedTypes"
+						    value      	FALSE))
+					    quid       	"405DD9A7031D"
+					    type       	"int"
+					    initv      	"1"
+					    exportControl 	"Public"
+					    static     	TRUE)
+					(object ClassAttribute "NON_NETWORK_MODE"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	TRUE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Transient"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Volatile"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedTypes"
+						    value      	FALSE))
+					    quid       	"405DD9A70326"
+					    type       	"int"
+					    initv      	"2"
+					    exportControl 	"Public"
+					    static     	TRUE))
+				    module     	"Component View::com::rohitsood::urlybird::client::DatabaseClient"
+				    quidu      	"405DD8ED0076"
+				    language   	"Java")
+				(object Class "DatabaseClientFactory"
+				    attributes 	(list Attribute_Set
+					(object Attribute
+					    tool       	"Java"
+					    name       	"BodyDanglingComment"
+					    value      	"")
+					(object Attribute
+					    tool       	"Java"
+					    name       	"GenerateFinalizer"
+					    value      	FALSE)
+					(object Attribute
+					    tool       	"Java"
+					    name       	"GenerateStaticInitializer"
+					    value      	FALSE)
+					(object Attribute
+					    tool       	"Java"
+					    name       	"GenerateInstanceInitializer"
+					    value      	FALSE)
+					(object Attribute
+					    tool       	"Java"
+					    name       	"GenerateDefaultConstructor"
+					    value      	FALSE)
+					(object Attribute
+					    tool       	"Java"
+					    name       	"ReadOnly"
+					    value      	FALSE)
+					(object Attribute
+					    tool       	"Java"
+					    name       	"Final"
+					    value      	FALSE)
+					(object Attribute
+					    tool       	"Java"
+					    name       	"Static"
+					    value      	FALSE)
+					(object Attribute
+					    tool       	"Java"
+					    name       	"Strictfp"
+					    value      	FALSE)
+					(object Attribute
+					    tool       	"Java"
+					    name       	"GenerateFullyQualifiedExtends"
+					    value      	"")
+					(object Attribute
+					    tool       	"Java"
+					    name       	"GenerateFullyQualifiedImplements"
+					    value      	"")
+					(object Attribute
+					    tool       	"Java"
+					    name       	"GenerateCode"
+					    value      	TRUE))
+				    quid       	"405DD9A70359"
+				    used_nodes 	(list uses_relationship_list
+					(object Uses_Relationship
+					    quid       	"405DDC24020A"
+					    supplier   	"Logical View::com::rohitsood::urlybird::client::DatabaseNetworkClient"
+					    quidu      	"405DD9A903C0")
+					(object Uses_Relationship
+					    quid       	"405DDC3A0021"
+					    supplier   	"Logical View::com::rohitsood::urlybird::client::DatabaseDirectClient"
+					    quidu      	"405DD9A800BB"))
+				    operations 	(list Operations
+					(object Operation "getDatabaseClient"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedReturn"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedThrows"
+						    value      	"")
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Abstract"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Static"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Native"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Synchronized"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Strictfp"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedArgument"
+						    value      	""))
+					    quid       	"405DD9A7036D"
+					    parameters 	(list Parameters
+						(object Parameter "mode"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"IsFinal"
+							    value      	"false"))
+						    quid       	"405DD9A70381"
+						    type       	"int"))
+					    result     	"DatabaseClient"
+					    concurrency 	"Sequential"
+					    opExportControl 	"Public"
+					    uid        	0
+					    quidu      	"405DD9A70297"))
+				    module     	"Component View::com::rohitsood::urlybird::client::DatabaseClientFactory"
+				    quidu      	"405DD8ED0120"
+				    language   	"Java")
+				(object Class "DatabaseDirectClient"
+				    attributes 	(list Attribute_Set
+					(object Attribute
+					    tool       	"Java"
+					    name       	"BodyDanglingComment"
+					    value      	"")
+					(object Attribute
+					    tool       	"Java"
+					    name       	"GenerateFinalizer"
+					    value      	FALSE)
+					(object Attribute
+					    tool       	"Java"
+					    name       	"GenerateStaticInitializer"
+					    value      	FALSE)
+					(object Attribute
+					    tool       	"Java"
+					    name       	"GenerateInstanceInitializer"
+					    value      	FALSE)
+					(object Attribute
+					    tool       	"Java"
+					    name       	"GenerateDefaultConstructor"
+					    value      	TRUE)
+					(object Attribute
+					    tool       	"Java"
+					    name       	"ReadOnly"
+					    value      	FALSE)
+					(object Attribute
+					    tool       	"Java"
+					    name       	"Final"
+					    value      	FALSE)
+					(object Attribute
+					    tool       	"Java"
+					    name       	"Static"
+					    value      	FALSE)
+					(object Attribute
+					    tool       	"Java"
+					    name       	"Strictfp"
+					    value      	FALSE)
+					(object Attribute
+					    tool       	"Java"
+					    name       	"GenerateFullyQualifiedExtends"
+					    value      	"")
+					(object Attribute
+					    tool       	"Java"
+					    name       	"GenerateFullyQualifiedImplements"
+					    value      	"")
+					(object Attribute
+					    tool       	"Java"
+					    name       	"ConstructorIs"
+					    value      	("Ctor_Set" 65))
+					(object Attribute
+					    tool       	"Java"
+					    name       	"GenerateCode"
+					    value      	TRUE))
+				    quid       	"405DD9A800BB"
+				    realized_interfaces 	(list realize_rel_list
+					(object Realize_Relationship
+					    attributes 	(list Attribute_Set)
+					    quid       	"405DD9A8010B"
+					    supplier   	"Logical View::com::rohitsood::urlybird::client::DatabaseClient"
+					    quidu      	"405DD9A70297"))
+				    operations 	(list Operations
+					(object Operation "DatabaseDirectClient"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedThrows"
+						    value      	"")
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Abstract"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Static"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Native"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Synchronized"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Strictfp"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedArgument"
+						    value      	""))
+					    quid       	"405DD9A8010C"
+					    concurrency 	"Sequential"
+					    opExportControl 	"Implementation"
+					    uid        	0)
+					(object Operation "create"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedReturn"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedThrows"
+						    value      	"")
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Abstract"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Static"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Native"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Synchronized"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Strictfp"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedArgument"
+						    value      	""))
+					    quid       	"405DD9A80115"
+					    parameters 	(list Parameters
+						(object Parameter "data"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"IsFinal"
+							    value      	"false"))
+						    quid       	"405DD9A80183"
+						    type       	"String[]"
+						    quidu      	"39CD6AE1011A"))
+					    result     	"int"
+					    exceptions 	"Logical View::suncertify::db::DuplicateKeyException[405DD9A8013F]"
+					    concurrency 	"Sequential"
+					    opExportControl 	"Public"
+					    uid        	0)
+					(object Operation "delete"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedReturn"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedThrows"
+						    value      	"")
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Abstract"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Static"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Native"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Synchronized"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Strictfp"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedArgument"
+						    value      	""))
+					    quid       	"405DD9A8018D"
+					    parameters 	(list Parameters
+						(object Parameter "recNo"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"IsFinal"
+							    value      	"false"))
+						    quid       	"405DD9A80205"
+						    type       	"int"))
+					    result     	"void"
+					    exceptions 	"Logical View::suncertify::db::RecordNotFoundException[405DD9A801BF]"
+					    concurrency 	"Sequential"
+					    opExportControl 	"Public"
+					    uid        	0)
+					(object Operation "find"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedReturn"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedThrows"
+						    value      	"")
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Abstract"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Static"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Native"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Synchronized"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Strictfp"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedArgument"
+						    value      	""))
+					    quid       	"405DD9A80206"
+					    parameters 	(list Parameters
+						(object Parameter "criteria"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"IsFinal"
+							    value      	"false"))
+						    quid       	"405DD9A80274"
+						    type       	"String[]"
+						    quidu      	"39CD6AE1011A"))
+					    result     	"int[]"
+					    exceptions 	"Logical View::suncertify::db::RecordNotFoundException[405DD9A801BF]"
+					    concurrency 	"Sequential"
+					    opExportControl 	"Public"
+					    uid        	0)
+					(object Operation "isLocked"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedReturn"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedThrows"
+						    value      	"")
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Abstract"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Static"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Native"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Synchronized"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Strictfp"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedArgument"
+						    value      	""))
+					    quid       	"405DD9A80275"
+					    parameters 	(list Parameters
+						(object Parameter "recNo"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"IsFinal"
+							    value      	"false"))
+						    quid       	"405DD9A802EC"
+						    type       	"int"))
+					    result     	"boolean"
+					    exceptions 	"Logical View::suncertify::db::RecordNotFoundException[405DD9A801BF]"
+					    concurrency 	"Sequential"
+					    opExportControl 	"Public"
+					    uid        	0)
+					(object Operation "lock"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedReturn"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedThrows"
+						    value      	"")
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Abstract"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Static"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Native"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Synchronized"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Strictfp"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedArgument"
+						    value      	""))
+					    quid       	"405DD9A802F6"
+					    parameters 	(list Parameters
+						(object Parameter "recNo"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"IsFinal"
+							    value      	"false"))
+						    quid       	"405DD9A8036E"
+						    type       	"int"))
+					    result     	"void"
+					    exceptions 	"Logical View::suncertify::db::RecordNotFoundException[405DD9A801BF]"
+					    concurrency 	"Sequential"
+					    opExportControl 	"Public"
+					    uid        	0)
+					(object Operation "read"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedReturn"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedThrows"
+						    value      	"")
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Abstract"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Static"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Native"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Synchronized"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Strictfp"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedArgument"
+						    value      	""))
+					    quid       	"405DD9A80378"
+					    parameters 	(list Parameters
+						(object Parameter "recNo"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"IsFinal"
+							    value      	"false"))
+						    quid       	"405DD9A90012"
+						    type       	"int"))
+					    result     	"String[]"
+					    exceptions 	"Logical View::suncertify::db::RecordNotFoundException[405DD9A801BF]"
+					    concurrency 	"Sequential"
+					    opExportControl 	"Public"
+					    uid        	0
+					    quidu      	"39CD6AE1011A")
+					(object Operation "undelete"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedReturn"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedThrows"
+						    value      	"")
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Abstract"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Static"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Native"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Synchronized"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Strictfp"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedArgument"
+						    value      	""))
+					    quid       	"405DD9A9001C"
+					    parameters 	(list Parameters
+						(object Parameter "recNo"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"IsFinal"
+							    value      	"false"))
+						    quid       	"405DD9A900C6"
+						    type       	"int"))
+					    result     	"void"
+					    exceptions 	"Logical View::suncertify::db::RecordNotFoundException[405DD9A801BF]"
+					    concurrency 	"Sequential"
+					    opExportControl 	"Public"
+					    uid        	0)
+					(object Operation "unlock"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedReturn"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedThrows"
+						    value      	"")
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Abstract"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Static"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Native"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Synchronized"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Strictfp"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedArgument"
+						    value      	""))
+					    quid       	"405DD9A900C7"
+					    parameters 	(list Parameters
+						(object Parameter "recNo"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"IsFinal"
+							    value      	"false"))
+						    quid       	"405DD9A9015D"
+						    type       	"int"))
+					    result     	"void"
+					    exceptions 	"Logical View::suncertify::db::RecordNotFoundException[405DD9A801BF]"
+					    concurrency 	"Sequential"
+					    opExportControl 	"Public"
+					    uid        	0)
+					(object Operation "update"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedReturn"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedThrows"
+						    value      	"")
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Abstract"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Static"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Native"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Synchronized"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Strictfp"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedArgument"
+						    value      	""))
+					    quid       	"405DD9A90167"
+					    parameters 	(list Parameters
+						(object Parameter "recNo"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"IsFinal"
+							    value      	"false"))
+						    quid       	"405DD9A90207"
+						    type       	"int")
+						(object Parameter "data"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"IsFinal"
+							    value      	"false"))
+						    quid       	"405DD9A90211"
+						    type       	"String[]"
+						    quidu      	"39CD6AE1011A"))
+					    result     	"void"
+					    exceptions 	"Logical View::suncertify::db::RecordNotFoundException[405DD9A801BF]"
+					    concurrency 	"Sequential"
+					    opExportControl 	"Public"
+					    uid        	0))
+				    module     	"Component View::com::rohitsood::urlybird::client::DatabaseDirectClient"
+				    quidu      	"405DD8ED01F3"
+				    language   	"Java")
+				(object Class "DatabaseNetworkClient"
+				    attributes 	(list Attribute_Set
+					(object Attribute
+					    tool       	"Java"
+					    name       	"BodyDanglingComment"
+					    value      	"")
+					(object Attribute
+					    tool       	"Java"
+					    name       	"GenerateFinalizer"
+					    value      	FALSE)
+					(object Attribute
+					    tool       	"Java"
+					    name       	"GenerateStaticInitializer"
+					    value      	FALSE)
+					(object Attribute
+					    tool       	"Java"
+					    name       	"GenerateInstanceInitializer"
+					    value      	FALSE)
+					(object Attribute
+					    tool       	"Java"
+					    name       	"GenerateDefaultConstructor"
+					    value      	TRUE)
+					(object Attribute
+					    tool       	"Java"
+					    name       	"ReadOnly"
+					    value      	FALSE)
+					(object Attribute
+					    tool       	"Java"
+					    name       	"Final"
+					    value      	FALSE)
+					(object Attribute
+					    tool       	"Java"
+					    name       	"Static"
+					    value      	FALSE)
+					(object Attribute
+					    tool       	"Java"
+					    name       	"Strictfp"
+					    value      	FALSE)
+					(object Attribute
+					    tool       	"Java"
+					    name       	"GenerateFullyQualifiedExtends"
+					    value      	"")
+					(object Attribute
+					    tool       	"Java"
+					    name       	"GenerateFullyQualifiedImplements"
+					    value      	"")
+					(object Attribute
+					    tool       	"Java"
+					    name       	"ConstructorIs"
+					    value      	("Ctor_Set" 65))
+					(object Attribute
+					    tool       	"Java"
+					    name       	"GenerateCode"
+					    value      	TRUE))
+				    quid       	"405DD9A903C0"
+				    documentation 	
+|This client will delegate requests to the Server implementation instance
+|@author Rohit Sood
+				    
+				    realized_interfaces 	(list realize_rel_list
+					(object Realize_Relationship
+					    attributes 	(list Attribute_Set)
+					    quid       	"405DD9AA0028"
+					    supplier   	"Logical View::com::rohitsood::urlybird::client::DatabaseClient"
+					    quidu      	"405DD9A70297"))
+				    operations 	(list Operations
+					(object Operation "DatabaseNetworkClient"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedThrows"
+						    value      	"")
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Abstract"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Static"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Native"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Synchronized"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Strictfp"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedArgument"
+						    value      	""))
+					    quid       	"405DD9AA008C"
+					    concurrency 	"Sequential"
+					    opExportControl 	"Implementation"
+					    uid        	0)
+					(object Operation "getServer"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedReturn"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedThrows"
+						    value      	"")
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Abstract"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Static"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Native"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Synchronized"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Strictfp"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedArgument"
+						    value      	""))
+					    quid       	"405DD9AA00AA"
+					    result     	"DatabaseNetworkServer"
+					    concurrency 	"Sequential"
+					    opExportControl 	"Private"
+					    uid        	0
+					    quidu      	"405DD9AA0040")
+					(object Operation "read"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedReturn"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedThrows"
+						    value      	"")
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Abstract"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Static"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Native"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Synchronized"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Strictfp"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedArgument"
+						    value      	""))
+					    quid       	"405DD9AA00C8"
+					    documentation 	
+|(non-Javadoc)
+|@see suncertify.db.DBMain#read(int)
+|
+					    
+					    parameters 	(list Parameters
+						(object Parameter "recNo"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"IsFinal"
+							    value      	"false"))
+						    quid       	"405DD9AA0172"
+						    type       	"int"))
+					    result     	"String[]"
+					    exceptions 	"Logical View::suncertify::db::RecordNotFoundException[405DD9A801BF]"
+					    concurrency 	"Sequential"
+					    opExportControl 	"Public"
+					    uid        	0
+					    quidu      	"39CD6AE1011A")
+					(object Operation "undelete"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedReturn"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedThrows"
+						    value      	"")
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Abstract"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Static"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Native"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Synchronized"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Strictfp"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedArgument"
+						    value      	""))
+					    quid       	"405DD9AA0173"
+					    documentation 	
+|(non-Javadoc)
+|@see suncertify.db.DBMain#undelete(int)
+|
+					    
+					    parameters 	(list Parameters
+						(object Parameter "i"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"IsFinal"
+							    value      	"false"))
+						    quid       	"405DD9AA0226"
+						    type       	"int"))
+					    result     	"void"
+					    exceptions 	"Logical View::suncertify::db::RecordNotFoundException[405DD9A801BF]"
+					    concurrency 	"Sequential"
+					    opExportControl 	"Public"
+					    uid        	0)
+					(object Operation "update"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedReturn"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedThrows"
+						    value      	"")
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Abstract"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Static"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Native"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Synchronized"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Strictfp"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedArgument"
+						    value      	""))
+					    quid       	"405DD9AA0227"
+					    documentation 	
+|(non-Javadoc)
+|@see suncertify.db.DBMain#update(int, java.lang.String[])
+|
+					    
+					    parameters 	(list Parameters
+						(object Parameter "recordNumber"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"IsFinal"
+							    value      	"false"))
+						    quid       	"405DD9AA02DB"
+						    type       	"int")
+						(object Parameter "data"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"IsFinal"
+							    value      	"false"))
+						    quid       	"405DD9AA02DC"
+						    type       	"String[]"
+						    quidu      	"39CD6AE1011A"))
+					    result     	"void"
+					    exceptions 	"Logical View::suncertify::db::RecordNotFoundException[405DD9A801BF]"
+					    concurrency 	"Sequential"
+					    opExportControl 	"Public"
+					    uid        	0)
+					(object Operation "delete"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedReturn"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedThrows"
+						    value      	"")
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Abstract"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Static"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Native"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Synchronized"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Strictfp"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedArgument"
+						    value      	""))
+					    quid       	"405DD9AA02E5"
+					    documentation 	
+|(non-Javadoc)
+|@see suncertify.db.DBMain#delete(int)
+|
+					    
+					    parameters 	(list Parameters
+						(object Parameter "recNo"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"IsFinal"
+							    value      	"false"))
+						    quid       	"405DD9AA03A3"
+						    type       	"int"))
+					    result     	"void"
+					    exceptions 	"Logical View::suncertify::db::RecordNotFoundException[405DD9A801BF]"
+					    concurrency 	"Sequential"
+					    opExportControl 	"Public"
+					    uid        	0)
+					(object Operation "find"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedReturn"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedThrows"
+						    value      	"")
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Abstract"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Static"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Native"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Synchronized"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Strictfp"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedArgument"
+						    value      	""))
+					    quid       	"405DD9AA03AD"
+					    documentation 	
+|(non-Javadoc)
+|@see suncertify.db.DBMain#find(java.lang.String[])
+|
+					    
+					    parameters 	(list Parameters
+						(object Parameter "criteria"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"IsFinal"
+							    value      	"false"))
+						    quid       	"405DD9AB0083"
+						    type       	"String[]"
+						    quidu      	"39CD6AE1011A"))
+					    result     	"int[]"
+					    exceptions 	"Logical View::suncertify::db::RecordNotFoundException[405DD9A801BF]"
+					    concurrency 	"Sequential"
+					    opExportControl 	"Public"
+					    uid        	0)
+					(object Operation "create"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedReturn"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedThrows"
+						    value      	"")
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Abstract"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Static"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Native"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Synchronized"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Strictfp"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedArgument"
+						    value      	""))
+					    quid       	"405DD9AB008D"
+					    documentation 	
+|(non-Javadoc)
+|@see suncertify.db.DBMain#create(java.lang.String[])
+|
+					    
+					    parameters 	(list Parameters
+						(object Parameter "data"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"IsFinal"
+							    value      	"false"))
+						    quid       	"405DD9AB0174"
+						    type       	"String[]"
+						    quidu      	"39CD6AE1011A"))
+					    result     	"int"
+					    exceptions 	"Logical View::suncertify::db::DuplicateKeyException[405DD9A8013F]"
+					    concurrency 	"Sequential"
+					    opExportControl 	"Public"
+					    uid        	0)
+					(object Operation "lock"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedReturn"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedThrows"
+						    value      	"")
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Abstract"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Static"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Native"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Synchronized"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Strictfp"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedArgument"
+						    value      	""))
+					    quid       	"405DD9AB0175"
+					    documentation 	
+|(non-Javadoc)
+|@see suncertify.db.DBMain#lock(int)
+|
+					    
+					    parameters 	(list Parameters
+						(object Parameter "recNo"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"IsFinal"
+							    value      	"false"))
+						    quid       	"405DD9AB0250"
+						    type       	"int"))
+					    result     	"void"
+					    exceptions 	"Logical View::suncertify::db::RecordNotFoundException[405DD9A801BF]"
+					    concurrency 	"Sequential"
+					    opExportControl 	"Public"
+					    uid        	0)
+					(object Operation "unlock"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedReturn"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedThrows"
+						    value      	"")
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Abstract"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Static"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Native"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Synchronized"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Strictfp"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedArgument"
+						    value      	""))
+					    quid       	"405DD9AB025A"
+					    documentation 	
+|(non-Javadoc)
+|@see suncertify.db.DBMain#unlock(int)
+|
+					    
+					    parameters 	(list Parameters
+						(object Parameter "recNo"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"IsFinal"
+							    value      	"false"))
+						    quid       	"405DD9AB0336"
+						    type       	"int"))
+					    result     	"void"
+					    exceptions 	"Logical View::suncertify::db::RecordNotFoundException[405DD9A801BF]"
+					    concurrency 	"Sequential"
+					    opExportControl 	"Public"
+					    uid        	0)
+					(object Operation "isLocked"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedReturn"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedThrows"
+						    value      	"")
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Abstract"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Static"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Native"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Synchronized"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Strictfp"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedArgument"
+						    value      	""))
+					    quid       	"405DD9AB0337"
+					    documentation 	
+|(non-Javadoc)
+|@see suncertify.db.DBMain#isLocked(int)
+|
+					    
+					    parameters 	(list Parameters
+						(object Parameter "recNo"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"IsFinal"
+							    value      	"false"))
+						    quid       	"405DD9AC0035"
+						    type       	"int"))
+					    result     	"boolean"
+					    exceptions 	"Logical View::suncertify::db::RecordNotFoundException[405DD9A801BF]"
+					    concurrency 	"Sequential"
+					    opExportControl 	"Public"
+					    uid        	0))
+				    module     	"Component View::com::rohitsood::urlybird::client::DatabaseNetworkClient"
+				    quidu      	"405DD8EF0029"
+				    language   	"Java")
+				(object Association "$UNNAMED$0"
+				    attributes 	(list Attribute_Set)
+				    quid       	"405DD9AA0082"
+				    roles      	(list role_list
+					(object Role "server"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"InitialValue"
+						    value      	"null")
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Transient"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Volatile"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedTypes"
+						    value      	FALSE))
+					    quid       	"405DD9AA0083"
+					    label      	"server"
+					    supplier   	"Logical View::com::rohitsood::urlybird::data::server::DatabaseNetworkServer"
+					    quidu      	"405DD9AA0040"
+					    exportControl 	"Private"
+					    is_navigable 	TRUE)
+					(object Role "$UNNAMED$1"
+					    quid       	"405DD9AA0085"
+					    supplier   	"Logical View::com::rohitsood::urlybird::client::DatabaseNetworkClient"
+					    quidu      	"405DD9A903C0")))
+				(object Class_Category "gui"
+				    quid       	"405DD9AC0143"
+				    exportControl 	"Public"
+				    logical_models 	(list unit_reference_list
+					(object Class "MainWindow"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"BodyDanglingComment"
+						    value      	"")
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFinalizer"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateStaticInitializer"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateInstanceInitializer"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateDefaultConstructor"
+						    value      	TRUE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"ReadOnly"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Static"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Strictfp"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedExtends"
+						    value      	"")
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedImplements"
+						    value      	"")
+						(object Attribute
+						    tool       	"Java"
+						    name       	"ConstructorIs"
+						    value      	("Ctor_Set" 62))
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateCode"
+						    value      	TRUE))
+					    quid       	"405DD9AC0145"
+					    superclasses 	(list inheritance_relationship_list
+						(object Inheritance_Relationship
+						    attributes 	(list Attribute_Set)
+						    quid       	"405DD9AC019D"
+						    supplier   	"Logical View::javax::swing::JFrame"
+						    quidu      	"39CD6E5F01C4"))
+					    operations 	(list Operations
+						(object Operation "MainWindow"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedThrows"
+							    value      	"")
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Abstract"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Static"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Final"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Native"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Synchronized"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Strictfp"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedArgument"
+							    value      	""))
+						    quid       	"405DD9AC019E"
+						    concurrency 	"Sequential"
+						    opExportControl 	"Public"
+						    uid        	0)
+						(object Operation "main"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedReturn"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedThrows"
+							    value      	"")
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Abstract"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Static"
+							    value      	TRUE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Final"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Native"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Synchronized"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Strictfp"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedArgument"
+							    value      	""))
+						    quid       	"405DD9AC01A7"
+						    parameters 	(list Parameters
+							(object Parameter "args"
+							    attributes 	(list Attribute_Set
+								(object Attribute
+								    tool       	"Java"
+								    name       	"IsFinal"
+								    value      	"false"))
+							    quid       	"405DD9AC01A8"
+							    type       	"String[]"
+							    quidu      	"39CD6AE1011A"))
+						    result     	"void"
+						    concurrency 	"Sequential"
+						    opExportControl 	"Public"
+						    uid        	0))
+					    module     	"Component View::com::rohitsood::urlybird::client::gui::MainWindow"
+					    quidu      	"405CCD600311"
+					    language   	"Java"))
+				    logical_presentations 	(list unit_reference_list)))
+			    logical_presentations 	(list unit_reference_list))
+			(object Class_Category "data"
+			    quid       	"405DD9AA003C"
+			    exportControl 	"Public"
+			    logical_models 	(list unit_reference_list
+				(object Class "DataRow"
+				    attributes 	(list Attribute_Set
+					(object Attribute
+					    tool       	"Java"
+					    name       	"BodyDanglingComment"
+					    value      	"")
+					(object Attribute
+					    tool       	"Java"
+					    name       	"GenerateFinalizer"
+					    value      	FALSE)
+					(object Attribute
+					    tool       	"Java"
+					    name       	"GenerateStaticInitializer"
+					    value      	FALSE)
+					(object Attribute
+					    tool       	"Java"
+					    name       	"GenerateInstanceInitializer"
+					    value      	FALSE)
+					(object Attribute
+					    tool       	"Java"
+					    name       	"GenerateDefaultConstructor"
+					    value      	FALSE)
+					(object Attribute
+					    tool       	"Java"
+					    name       	"ReadOnly"
+					    value      	FALSE)
+					(object Attribute
+					    tool       	"Java"
+					    name       	"Final"
+					    value      	FALSE)
+					(object Attribute
+					    tool       	"Java"
+					    name       	"Static"
+					    value      	FALSE)
+					(object Attribute
+					    tool       	"Java"
+					    name       	"Strictfp"
+					    value      	FALSE)
+					(object Attribute
+					    tool       	"Java"
+					    name       	"GenerateFullyQualifiedExtends"
+					    value      	"")
+					(object Attribute
+					    tool       	"Java"
+					    name       	"GenerateCode"
+					    value      	TRUE))
+				    quid       	"405DD9AC0233"
+				    documentation 	
+|Purpose
+|@author Rohit Sood
+				    
+				    stereotype 	"Interface"
+				    superclasses 	(list inheritance_relationship_list
+					(object Inheritance_Relationship
+					    attributes 	(list Attribute_Set)
+					    quid       	"405DD9AC02DE"
+					    supplier   	"Logical View::java::io::Serializable"
+					    quidu      	"39CD6AED038C"))
+				    class_attributes 	(list class_attribute_list
+					(object ClassAttribute "DATA_SECTION_POINTER"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	TRUE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Transient"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Volatile"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedTypes"
+						    value      	FALSE))
+					    quid       	"405DD9AC02DF"
+					    type       	"int"
+					    initv      	"74"
+					    exportControl 	"Public"
+					    static     	TRUE)
+					(object ClassAttribute "DATA_SECTION_INTERVAL"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	TRUE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Transient"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Volatile"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedTypes"
+						    value      	FALSE))
+					    quid       	"405DD9AC02E8"
+					    type       	"int"
+					    initv      	"160"
+					    exportControl 	"Public"
+					    static     	TRUE)
+					(object ClassAttribute "DELETED_FLAG_POSITION"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	TRUE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Transient"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Volatile"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedTypes"
+						    value      	FALSE))
+					    quid       	"405DD9AC02F2"
+					    type       	"int"
+					    initv      	"0"
+					    exportControl 	"Public"
+					    static     	TRUE)
+					(object ClassAttribute "HOTEL_NAME_POSITION"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	TRUE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Transient"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Volatile"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedTypes"
+						    value      	FALSE))
+					    quid       	"405DD9AC02FC"
+					    type       	"int"
+					    initv      	"1"
+					    exportControl 	"Public"
+					    static     	TRUE)
+					(object ClassAttribute "CITY_NAME_POSITION"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	TRUE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Transient"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Volatile"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedTypes"
+						    value      	FALSE))
+					    quid       	"405DD9AC0306"
+					    type       	"int"
+					    initv      	"65"
+					    exportControl 	"Public"
+					    static     	TRUE)
+					(object ClassAttribute "MAX_OCCUPANCY_POSITION"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	TRUE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Transient"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Volatile"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedTypes"
+						    value      	FALSE))
+					    quid       	"405DD9AC0310"
+					    type       	"int"
+					    initv      	"129"
+					    exportControl 	"Public"
+					    static     	TRUE)
+					(object ClassAttribute "SMOKING_FLAG_POSITION"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	TRUE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Transient"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Volatile"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedTypes"
+						    value      	FALSE))
+					    quid       	"405DD9AC031A"
+					    type       	"int"
+					    initv      	"133"
+					    exportControl 	"Public"
+					    static     	TRUE)
+					(object ClassAttribute "PRICE_POSITION"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	TRUE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Transient"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Volatile"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedTypes"
+						    value      	FALSE))
+					    quid       	"405DD9AC031B"
+					    type       	"int"
+					    initv      	"134"
+					    exportControl 	"Public"
+					    static     	TRUE)
+					(object ClassAttribute "DATE_AVAILABLE_POSITION"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	TRUE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Transient"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Volatile"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedTypes"
+						    value      	FALSE))
+					    quid       	"405DD9AC0324"
+					    type       	"int"
+					    initv      	"142"
+					    exportControl 	"Public"
+					    static     	TRUE)
+					(object ClassAttribute "CUSTOMER_RECORD_POSITION"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	TRUE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Transient"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Volatile"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedTypes"
+						    value      	FALSE))
+					    quid       	"405DD9AC032E"
+					    type       	"int"
+					    initv      	"152"
+					    exportControl 	"Public"
+					    static     	TRUE)
+					(object ClassAttribute "NUMBER_OF_COLUMNS"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	TRUE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Transient"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Volatile"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedTypes"
+						    value      	FALSE))
+					    quid       	"405DD9AC0338"
+					    type       	"int"
+					    initv      	"7"
+					    exportControl 	"Public"
+					    static     	TRUE)
+					(object ClassAttribute "DELETED_FLAG_LENGTH"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	TRUE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Transient"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Volatile"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedTypes"
+						    value      	FALSE))
+					    quid       	"405DD9AC0342"
+					    type       	"int"
+					    initv      	"1"
+					    exportControl 	"Public"
+					    static     	TRUE)
+					(object ClassAttribute "HOTEL_NAME_LENGTH"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	TRUE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Transient"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Volatile"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedTypes"
+						    value      	FALSE))
+					    quid       	"405DD9AC034C"
+					    type       	"int"
+					    initv      	"64"
+					    exportControl 	"Public"
+					    static     	TRUE)
+					(object ClassAttribute "CITY_NAME_LENGTH"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	TRUE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Transient"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Volatile"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedTypes"
+						    value      	FALSE))
+					    quid       	"405DD9AC0356"
+					    type       	"int"
+					    initv      	"64"
+					    exportControl 	"Public"
+					    static     	TRUE)
+					(object ClassAttribute "MAX_OCCUPANCY_LENGTH"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	TRUE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Transient"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Volatile"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedTypes"
+						    value      	FALSE))
+					    quid       	"405DD9AC0360"
+					    type       	"int"
+					    initv      	"4"
+					    exportControl 	"Public"
+					    static     	TRUE)
+					(object ClassAttribute "SMOKING_FLAG_LENGTH"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	TRUE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Transient"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Volatile"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedTypes"
+						    value      	FALSE))
+					    quid       	"405DD9AC036A"
+					    type       	"int"
+					    initv      	"1"
+					    exportControl 	"Public"
+					    static     	TRUE)
+					(object ClassAttribute "PRICE_LENGTH"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	TRUE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Transient"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Volatile"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedTypes"
+						    value      	FALSE))
+					    quid       	"405DD9AC0374"
+					    type       	"int"
+					    initv      	"8"
+					    exportControl 	"Public"
+					    static     	TRUE)
+					(object ClassAttribute "DATE_AVAILABLE_LENGTH"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	TRUE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Transient"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Volatile"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedTypes"
+						    value      	FALSE))
+					    quid       	"405DD9AC037E"
+					    type       	"int"
+					    initv      	"10"
+					    exportControl 	"Public"
+					    static     	TRUE)
+					(object ClassAttribute "CUSTOMER_RECORD_LENGTH"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	TRUE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Transient"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Volatile"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedTypes"
+						    value      	FALSE))
+					    quid       	"405DD9AC0388"
+					    type       	"int"
+					    initv      	"8"
+					    exportControl 	"Public"
+					    static     	TRUE)
+					(object ClassAttribute "DATE_PATTERN"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	TRUE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Transient"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Volatile"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedTypes"
+						    value      	FALSE))
+					    quid       	"405DD9AC0392"
+					    type       	"String"
+					    quidu      	"39CD6AE1011A"
+					    initv      	
+|"yyyy.mm.dd"
+					    
+					    exportControl 	"Public"
+					    static     	TRUE)
+					(object ClassAttribute "TRUE_FLAG"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	TRUE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Transient"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Volatile"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedTypes"
+						    value      	FALSE))
+					    quid       	"405DD9AC039C"
+					    type       	"String"
+					    quidu      	"39CD6AE1011A"
+					    initv      	
+|"1"
+					    
+					    exportControl 	"Public"
+					    static     	TRUE)
+					(object ClassAttribute "FALSE_FLAG"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	TRUE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Transient"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Volatile"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedTypes"
+						    value      	FALSE))
+					    quid       	"405DD9AC03A6"
+					    type       	"String"
+					    quidu      	"39CD6AE1011A"
+					    initv      	
+|"0"
+					    
+					    exportControl 	"Public"
+					    static     	TRUE)
+					(object ClassAttribute "DB_FILE"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	TRUE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Transient"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Volatile"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedTypes"
+						    value      	FALSE))
+					    quid       	"405DD9AC03B0"
+					    type       	"String"
+					    quidu      	"39CD6AE1011A"
+					    initv      	
+|System.getProperty("user.dir") + "/db.db"
+					    
+					    exportControl 	"Public"
+					    static     	TRUE))
+				    module     	"Component View::com::rohitsood::urlybird::data::DataRow"
+				    quidu      	"405DD8F00283"
+				    language   	"Java")
+				(object Class_Category "server"
+				    quid       	"405DD9AA003E"
+				    exportControl 	"Public"
+				    logical_models 	(list unit_reference_list
+					(object Class "DatabaseNetworkServer"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"ReadOnly"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"BodyDanglingComment"
+						    value      	"")
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFinalizer"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateStaticInitializer"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateInstanceInitializer"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateDefaultConstructor"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Static"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Strictfp"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedExtends"
+						    value      	"")
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateCode"
+						    value      	TRUE))
+					    quid       	"405DD9AA0040"
+					    documentation 	
+|The trouble is that I can't use DBMain and extend that here - due to the remote exceptions
+|What is the best design to support both remote and local
+|@author N0110643
+					    
+					    stereotype 	"Interface"
+					    superclasses 	(list inheritance_relationship_list
+						(object Inheritance_Relationship
+						    attributes 	(list Attribute_Set)
+						    quid       	"405DD9AD01B3"
+						    supplier   	"Logical View::java::rmi::Remote"
+						    quidu      	"39CD6CC60193"))
+					    operations 	(list Operations
+						(object Operation "read"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedReturn"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedThrows"
+							    value      	"")
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Abstract"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Static"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Final"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Native"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Synchronized"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Strictfp"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedArgument"
+							    value      	""))
+						    quid       	"405DD9AD01BD"
+						    documentation 	
+|Reads a record from the file. Returns an array where each
+|element is a record value.
+|@param recNo this is the record number
+|
+						    
+						    parameters 	(list Parameters
+							(object Parameter "recNo"
+							    attributes 	(list Attribute_Set
+								(object Attribute
+								    tool       	"Java"
+								    name       	"IsFinal"
+								    value      	"false"))
+							    quid       	"405DD9AD02FD"
+							    type       	"int"))
+						    result     	"String[]"
+						    exceptions 	"Logical View::suncertify::db::RecordNotFoundException[405DD9A801BF],Logical View::java::rmi::RemoteException[39CD6CC20348]"
+						    concurrency 	"Sequential"
+						    opExportControl 	"Public"
+						    uid        	0
+						    quidu      	"39CD6AE1011A")
+						(object Operation "undelete"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedReturn"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedThrows"
+							    value      	"")
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Abstract"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Static"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Final"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Native"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Synchronized"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Strictfp"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedArgument"
+							    value      	""))
+						    quid       	"405DD9AD0307"
+						    documentation 	
+|TODO don't use undelete as this is not part of the requirement
+|
+						    
+						    parameters 	(list Parameters
+							(object Parameter "i"
+							    attributes 	(list Attribute_Set
+								(object Attribute
+								    tool       	"Java"
+								    name       	"IsFinal"
+								    value      	"false"))
+							    quid       	"405DD9AE0055"
+							    type       	"int"))
+						    result     	"void"
+						    exceptions 	"Logical View::suncertify::db::RecordNotFoundException[405DD9A801BF],Logical View::java::rmi::RemoteException[39CD6CC20348]"
+						    concurrency 	"Sequential"
+						    opExportControl 	"Public"
+						    uid        	0)
+						(object Operation "update"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedReturn"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedThrows"
+							    value      	"")
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Abstract"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Static"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Final"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Native"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Synchronized"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Strictfp"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedArgument"
+							    value      	""))
+						    quid       	"405DD9AE005F"
+						    documentation 	
+|Modifies the fields of a record. The new value for field n appears in data[n].
+|@param recNo
+|@param data
+|
+						    
+						    parameters 	(list Parameters
+							(object Parameter "recordNumber"
+							    attributes 	(list Attribute_Set
+								(object Attribute
+								    tool       	"Java"
+								    name       	"IsFinal"
+								    value      	"false"))
+							    quid       	"405DD9AE01BE"
+							    type       	"int")
+							(object Parameter "data"
+							    attributes 	(list Attribute_Set
+								(object Attribute
+								    tool       	"Java"
+								    name       	"IsFinal"
+								    value      	"false"))
+							    quid       	"405DD9AE01BF"
+							    type       	"String[]"
+							    quidu      	"39CD6AE1011A"))
+						    result     	"void"
+						    exceptions 	"Logical View::suncertify::db::RecordNotFoundException[405DD9A801BF],Logical View::java::rmi::RemoteException[39CD6CC20348]"
+						    concurrency 	"Sequential"
+						    opExportControl 	"Public"
+						    uid        	0)
+						(object Operation "delete"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedReturn"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedThrows"
+							    value      	"")
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Abstract"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Static"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Final"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Native"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Synchronized"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Strictfp"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedArgument"
+							    value      	""))
+						    quid       	"405DD9AE01C8"
+						    documentation 	
+|Deletes a record, making the record number and associated disk
+|storage available for reuse. 
+|@param recNo this is the record number to be deleted
+|
+						    
+						    parameters 	(list Parameters
+							(object Parameter "recNo"
+							    attributes 	(list Attribute_Set
+								(object Attribute
+								    tool       	"Java"
+								    name       	"IsFinal"
+								    value      	"false"))
+							    quid       	"405DD9AE031D"
+							    type       	"int"))
+						    result     	"void"
+						    exceptions 	"Logical View::suncertify::db::RecordNotFoundException[405DD9A801BF],Logical View::java::rmi::RemoteException[39CD6CC20348]"
+						    concurrency 	"Sequential"
+						    opExportControl 	"Public"
+						    uid        	0)
+						(object Operation "find"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedReturn"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedThrows"
+							    value      	"")
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Abstract"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Static"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Final"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Native"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Synchronized"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Strictfp"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedArgument"
+							    value      	""))
+						    quid       	"405DD9AE031E"
+						    documentation 	
+|Returns an array of record numbers that match the specified
+|criteria. Field n in the database file is described by
+|criteria[n]. A null value in criteria[n] matches any field
+|value. A non-null  value in criteria[n] matches any field
+|value that begins with criteria[n]. (For example, "Fred"
+|matches "Fred" or "Freddy".)
+|
+						    
+						    parameters 	(list Parameters
+							(object Parameter "criteria"
+							    attributes 	(list Attribute_Set
+								(object Attribute
+								    tool       	"Java"
+								    name       	"IsFinal"
+								    value      	"false"))
+							    quid       	"405DD9AF0089"
+							    type       	"String[]"
+							    quidu      	"39CD6AE1011A"))
+						    result     	"int[]"
+						    exceptions 	"Logical View::suncertify::db::RecordNotFoundException[405DD9A801BF],Logical View::java::rmi::RemoteException[39CD6CC20348]"
+						    concurrency 	"Sequential"
+						    opExportControl 	"Public"
+						    uid        	0)
+						(object Operation "create"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedReturn"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedThrows"
+							    value      	"")
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Abstract"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Static"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Final"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Native"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Synchronized"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Strictfp"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedArgument"
+							    value      	""))
+						    quid       	"405DD9AF0093"
+						    documentation 	
+|Creates a new record in the database (possibly reusing a
+|deleted entry). Inserts the given data, and returns the record
+|number of the new record.
+|
+						    
+						    parameters 	(list Parameters
+							(object Parameter "data"
+							    attributes 	(list Attribute_Set
+								(object Attribute
+								    tool       	"Java"
+								    name       	"IsFinal"
+								    value      	"false"))
+							    quid       	"405DD9AF0210"
+							    type       	"String[]"
+							    quidu      	"39CD6AE1011A"))
+						    result     	"int"
+						    exceptions 	"Logical View::suncertify::db::DuplicateKeyException[405DD9A8013F],Logical View::java::rmi::RemoteException[39CD6CC20348]"
+						    concurrency 	"Sequential"
+						    opExportControl 	"Public"
+						    uid        	0)
+						(object Operation "lock"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedReturn"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedThrows"
+							    value      	"")
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Abstract"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Static"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Final"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Native"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Synchronized"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Strictfp"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedArgument"
+							    value      	""))
+						    quid       	"405DD9AF021A"
+						    documentation 	
+|Locks a record so that it can only be updated or deleted by this client.
+|If the specified record is already locked, the current thread gives up
+|the CPU and consumes no CPU cycles until the record is unlocked.
+|
+						    
+						    parameters 	(list Parameters
+							(object Parameter "recNo"
+							    attributes 	(list Attribute_Set
+								(object Attribute
+								    tool       	"Java"
+								    name       	"IsFinal"
+								    value      	"false"))
+							    quid       	"405DD9AF0382"
+							    type       	"int"))
+						    result     	"void"
+						    exceptions 	"Logical View::suncertify::db::RecordNotFoundException[405DD9A801BF],Logical View::java::rmi::RemoteException[39CD6CC20348]"
+						    concurrency 	"Sequential"
+						    opExportControl 	"Public"
+						    uid        	0)
+						(object Operation "unlock"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedReturn"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedThrows"
+							    value      	"")
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Abstract"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Static"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Final"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Native"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Synchronized"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Strictfp"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedArgument"
+							    value      	""))
+						    quid       	"405DD9AF0383"
+						    documentation 	
+|Releases the lock on a record.
+|
+|
+						    
+						    parameters 	(list Parameters
+							(object Parameter "recNo"
+							    attributes 	(list Attribute_Set
+								(object Attribute
+								    tool       	"Java"
+								    name       	"IsFinal"
+								    value      	"false"))
+							    quid       	"405DD9B0010D"
+							    type       	"int"))
+						    result     	"void"
+						    exceptions 	"Logical View::suncertify::db::RecordNotFoundException[405DD9A801BF],Logical View::java::rmi::RemoteException[39CD6CC20348]"
+						    concurrency 	"Sequential"
+						    opExportControl 	"Public"
+						    uid        	0)
+						(object Operation "isLocked"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedReturn"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedThrows"
+							    value      	"")
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Abstract"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Static"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Final"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Native"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Synchronized"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Strictfp"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedArgument"
+							    value      	""))
+						    quid       	"405DD9B0010E"
+						    documentation 	
+|Determines if a record is currenly locked. Returns true if the
+|record is locked, false otherwise.
+|
+|
+						    
+						    parameters 	(list Parameters
+							(object Parameter "recNo"
+							    attributes 	(list Attribute_Set
+								(object Attribute
+								    tool       	"Java"
+								    name       	"IsFinal"
+								    value      	"false"))
+							    quid       	"405DD9B0029D"
+							    type       	"int"))
+						    result     	"boolean"
+						    exceptions 	"Logical View::suncertify::db::RecordNotFoundException[405DD9A801BF],Logical View::java::rmi::RemoteException[39CD6CC20348]"
+						    concurrency 	"Sequential"
+						    opExportControl 	"Public"
+						    uid        	0))
+					    class_attributes 	(list class_attribute_list
+						(object ClassAttribute "SERVER_LOOKUP_NAME"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Final"
+							    value      	TRUE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Transient"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Volatile"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedTypes"
+							    value      	FALSE))
+						    quid       	"405DD9AD01B4"
+						    type       	"String"
+						    quidu      	"39CD6AE1011A"
+						    initv      	
+|"rmi://localhost/DatabaseNetworkServer"
+						    
+						    exportControl 	"Public"
+						    static     	TRUE))
+					    module     	"Component View::com::rohitsood::urlybird::data::server::DatabaseNetworkServer"
+					    quidu      	"405DD8EF00AB"
+					    language   	"Java")
+					(object Class "DatabaseNetworkServerImpl"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"BodyDanglingComment"
+						    value      	"")
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFinalizer"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateStaticInitializer"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateInstanceInitializer"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateDefaultConstructor"
+						    value      	TRUE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"ReadOnly"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Static"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Strictfp"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedExtends"
+						    value      	"")
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedImplements"
+						    value      	"")
+						(object Attribute
+						    tool       	"Java"
+						    name       	"ConstructorIs"
+						    value      	("Ctor_Set" 62))
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateCode"
+						    value      	TRUE))
+					    quid       	"405DD9B0038E"
+					    superclasses 	(list inheritance_relationship_list
+						(object Inheritance_Relationship
+						    attributes 	(list Attribute_Set)
+						    quid       	"405DD9B1000A"
+						    supplier   	"Logical View::java::rmi::server::UnicastRemoteObject"
+						    quidu      	"39CD6CCD017F"))
+					    realized_interfaces 	(list realize_rel_list
+						(object Realize_Relationship
+						    attributes 	(list Attribute_Set)
+						    quid       	"405DD9B10046"
+						    supplier   	"Logical View::com::rohitsood::urlybird::data::server::DatabaseNetworkServer"
+						    quidu      	"405DD9AA0040"))
+					    operations 	(list Operations
+						(object Operation "DatabaseNetworkServerImpl"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedThrows"
+							    value      	"")
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Abstract"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Static"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Final"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Native"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Synchronized"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Strictfp"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedArgument"
+							    value      	""))
+						    quid       	"405DD9B10050"
+						    exceptions 	"Logical View::java::rmi::RemoteException[39CD6CC20348]"
+						    concurrency 	"Sequential"
+						    opExportControl 	"Public"
+						    uid        	0)
+						(object Operation "create"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedReturn"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedThrows"
+							    value      	"")
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Abstract"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Static"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Final"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Native"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Synchronized"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Strictfp"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedArgument"
+							    value      	""))
+						    quid       	"405DD9B100A0"
+						    parameters 	(list Parameters
+							(object Parameter "data"
+							    attributes 	(list Attribute_Set
+								(object Attribute
+								    tool       	"Java"
+								    name       	"IsFinal"
+								    value      	"false"))
+							    quid       	"405DD9B101F4"
+							    type       	"String[]"
+							    quidu      	"39CD6AE1011A"))
+						    result     	"int"
+						    exceptions 	"Logical View::suncertify::db::DuplicateKeyException[405DD9A8013F]"
+						    concurrency 	"Sequential"
+						    opExportControl 	"Public"
+						    uid        	0)
+						(object Operation "delete"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedReturn"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedThrows"
+							    value      	"")
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Abstract"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Static"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Final"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Native"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Synchronized"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Strictfp"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedArgument"
+							    value      	""))
+						    quid       	"405DD9B101F5"
+						    parameters 	(list Parameters
+							(object Parameter "recNo"
+							    attributes 	(list Attribute_Set
+								(object Attribute
+								    tool       	"Java"
+								    name       	"IsFinal"
+								    value      	"false"))
+							    quid       	"405DD9B1032B"
+							    type       	"int"))
+						    result     	"void"
+						    exceptions 	"Logical View::suncertify::db::RecordNotFoundException[405DD9A801BF]"
+						    concurrency 	"Sequential"
+						    opExportControl 	"Public"
+						    uid        	0)
+						(object Operation "find"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedReturn"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedThrows"
+							    value      	"")
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Abstract"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Static"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Final"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Native"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Synchronized"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Strictfp"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedArgument"
+							    value      	""))
+						    quid       	"405DD9B10335"
+						    parameters 	(list Parameters
+							(object Parameter "criteria"
+							    attributes 	(list Attribute_Set
+								(object Attribute
+								    tool       	"Java"
+								    name       	"IsFinal"
+								    value      	"false"))
+							    quid       	"405DD9B2008D"
+							    type       	"String[]"
+							    quidu      	"39CD6AE1011A"))
+						    result     	"int[]"
+						    exceptions 	"Logical View::suncertify::db::RecordNotFoundException[405DD9A801BF]"
+						    concurrency 	"Sequential"
+						    opExportControl 	"Public"
+						    uid        	0)
+						(object Operation "isLocked"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedReturn"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedThrows"
+							    value      	"")
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Abstract"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Static"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Final"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Native"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Synchronized"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Strictfp"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedArgument"
+							    value      	""))
+						    quid       	"405DD9B2008E"
+						    parameters 	(list Parameters
+							(object Parameter "recNo"
+							    attributes 	(list Attribute_Set
+								(object Attribute
+								    tool       	"Java"
+								    name       	"IsFinal"
+								    value      	"false"))
+							    quid       	"405DD9B201EC"
+							    type       	"int"))
+						    result     	"boolean"
+						    exceptions 	"Logical View::suncertify::db::RecordNotFoundException[405DD9A801BF]"
+						    concurrency 	"Sequential"
+						    opExportControl 	"Public"
+						    uid        	0)
+						(object Operation "lock"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedReturn"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedThrows"
+							    value      	"")
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Abstract"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Static"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Final"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Native"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Synchronized"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Strictfp"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedArgument"
+							    value      	""))
+						    quid       	"405DD9B201F6"
+						    parameters 	(list Parameters
+							(object Parameter "recNo"
+							    attributes 	(list Attribute_Set
+								(object Attribute
+								    tool       	"Java"
+								    name       	"IsFinal"
+								    value      	"false"))
+							    quid       	"405DD9B20340"
+							    type       	"int"))
+						    result     	"void"
+						    exceptions 	"Logical View::suncertify::db::RecordNotFoundException[405DD9A801BF]"
+						    concurrency 	"Sequential"
+						    opExportControl 	"Public"
+						    uid        	0)
+						(object Operation "read"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedReturn"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedThrows"
+							    value      	"")
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Abstract"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Static"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Final"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Native"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Synchronized"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Strictfp"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedArgument"
+							    value      	""))
+						    quid       	"405DD9B20341"
+						    parameters 	(list Parameters
+							(object Parameter "recNo"
+							    attributes 	(list Attribute_Set
+								(object Attribute
+								    tool       	"Java"
+								    name       	"IsFinal"
+								    value      	"false"))
+							    quid       	"405DD9B300B7"
+							    type       	"int"))
+						    result     	"String[]"
+						    exceptions 	"Logical View::suncertify::db::RecordNotFoundException[405DD9A801BF]"
+						    concurrency 	"Sequential"
+						    opExportControl 	"Public"
+						    uid        	0
+						    quidu      	"39CD6AE1011A")
+						(object Operation "undelete"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedReturn"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedThrows"
+							    value      	"")
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Abstract"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Static"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Final"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Native"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Synchronized"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Strictfp"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedArgument"
+							    value      	""))
+						    quid       	"405DD9B300B8"
+						    parameters 	(list Parameters
+							(object Parameter "recNo"
+							    attributes 	(list Attribute_Set
+								(object Attribute
+								    tool       	"Java"
+								    name       	"IsFinal"
+								    value      	"false"))
+							    quid       	"405DD9B30233"
+							    type       	"int"))
+						    result     	"void"
+						    exceptions 	"Logical View::suncertify::db::RecordNotFoundException[405DD9A801BF]"
+						    concurrency 	"Sequential"
+						    opExportControl 	"Public"
+						    uid        	0)
+						(object Operation "unlock"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedReturn"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedThrows"
+							    value      	"")
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Abstract"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Static"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Final"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Native"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Synchronized"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Strictfp"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedArgument"
+							    value      	""))
+						    quid       	"405DD9B3023D"
+						    parameters 	(list Parameters
+							(object Parameter "recNo"
+							    attributes 	(list Attribute_Set
+								(object Attribute
+								    tool       	"Java"
+								    name       	"IsFinal"
+								    value      	"false"))
+							    quid       	"405DD9B3039C"
+							    type       	"int"))
+						    result     	"void"
+						    exceptions 	"Logical View::suncertify::db::RecordNotFoundException[405DD9A801BF]"
+						    concurrency 	"Sequential"
+						    opExportControl 	"Public"
+						    uid        	0)
+						(object Operation "update"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedReturn"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedThrows"
+							    value      	"")
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Abstract"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Static"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Final"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Native"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Synchronized"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Strictfp"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedArgument"
+							    value      	""))
+						    quid       	"405DD9B303A6"
+						    parameters 	(list Parameters
+							(object Parameter "recNo"
+							    attributes 	(list Attribute_Set
+								(object Attribute
+								    tool       	"Java"
+								    name       	"IsFinal"
+								    value      	"false"))
+							    quid       	"405DD9B40130"
+							    type       	"int")
+							(object Parameter "data"
+							    attributes 	(list Attribute_Set
+								(object Attribute
+								    tool       	"Java"
+								    name       	"IsFinal"
+								    value      	"false"))
+							    quid       	"405DD9B40131"
+							    type       	"String[]"
+							    quidu      	"39CD6AE1011A"))
+						    result     	"void"
+						    exceptions 	"Logical View::suncertify::db::RecordNotFoundException[405DD9A801BF]"
+						    concurrency 	"Sequential"
+						    opExportControl 	"Public"
+						    uid        	0))
+					    module     	"Component View::com::rohitsood::urlybird::data::server::DatabaseNetworkServerImpl"
+					    quidu      	"405DD8F301A1"
+					    language   	"Java")
+					(object Class "ServerLauncher"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"BodyDanglingComment"
+						    value      	"")
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFinalizer"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateStaticInitializer"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateInstanceInitializer"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateDefaultConstructor"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"ReadOnly"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Static"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Strictfp"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedExtends"
+						    value      	"")
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedImplements"
+						    value      	"")
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateCode"
+						    value      	TRUE))
+					    quid       	"405DD9B401B3"
+					    operations 	(list Operations
+						(object Operation "main"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedReturn"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedThrows"
+							    value      	"")
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Abstract"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Static"
+							    value      	TRUE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Final"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Native"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Synchronized"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"Strictfp"
+							    value      	FALSE)
+							(object Attribute
+							    tool       	"Java"
+							    name       	"GenerateFullyQualifiedArgument"
+							    value      	""))
+						    quid       	"405DD9B401D1"
+						    parameters 	(list Parameters
+							(object Parameter "args[]"
+							    attributes 	(list Attribute_Set
+								(object Attribute
+								    tool       	"Java"
+								    name       	"IsFinal"
+								    value      	"false"))
+							    quid       	"405DD9B401D2"
+							    type       	"String"
+							    quidu      	"39CD6AE1011A"))
+						    result     	"void"
+						    concurrency 	"Sequential"
+						    opExportControl 	"Public"
+						    uid        	0))
+					    module     	"Component View::com::rohitsood::urlybird::data::server::ServerLauncher"
+					    quidu      	"405DD8F40211"
+					    language   	"Java"))
+				    logical_presentations 	(list unit_reference_list)))
+			    logical_presentations 	(list unit_reference_list))
+			(object Class_Category "util"
+			    quid       	"405DD9B402F3"
+			    exportControl 	"Public"
+			    logical_models 	(list unit_reference_list
+				(object Class "RandomAccessFileReader"
+				    attributes 	(list Attribute_Set
+					(object Attribute
+					    tool       	"Java"
+					    name       	"BodyDanglingComment"
+					    value      	"")
+					(object Attribute
+					    tool       	"Java"
+					    name       	"GenerateFinalizer"
+					    value      	FALSE)
+					(object Attribute
+					    tool       	"Java"
+					    name       	"GenerateStaticInitializer"
+					    value      	FALSE)
+					(object Attribute
+					    tool       	"Java"
+					    name       	"GenerateInstanceInitializer"
+					    value      	FALSE)
+					(object Attribute
+					    tool       	"Java"
+					    name       	"GenerateDefaultConstructor"
+					    value      	FALSE)
+					(object Attribute
+					    tool       	"Java"
+					    name       	"ReadOnly"
+					    value      	FALSE)
+					(object Attribute
+					    tool       	"Java"
+					    name       	"Final"
+					    value      	TRUE)
+					(object Attribute
+					    tool       	"Java"
+					    name       	"Static"
+					    value      	FALSE)
+					(object Attribute
+					    tool       	"Java"
+					    name       	"Strictfp"
+					    value      	FALSE)
+					(object Attribute
+					    tool       	"Java"
+					    name       	"GenerateFullyQualifiedExtends"
+					    value      	"")
+					(object Attribute
+					    tool       	"Java"
+					    name       	"GenerateFullyQualifiedImplements"
+					    value      	"")
+					(object Attribute
+					    tool       	"Java"
+					    name       	"GenerateCode"
+					    value      	TRUE))
+				    quid       	"405DD9B402FD"
+				    documentation 	
+|Reads portions of a random access files
+|@author Rohit Sood
+				    
+				    operations 	(list Operations
+					(object Operation "readInt"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedReturn"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedThrows"
+						    value      	"")
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Abstract"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Static"
+						    value      	TRUE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Native"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Synchronized"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Strictfp"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedArgument"
+						    value      	""))
+					    quid       	"405DD9B40311"
+					    parameters 	(list Parameters
+						(object Parameter "file"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"IsFinal"
+							    value      	"false"))
+						    quid       	"405DD9B40375"
+						    type       	"RandomAccessFile"
+						    quidu      	"39CD6C43036C")
+						(object Parameter "len"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"IsFinal"
+							    value      	"false"))
+						    quid       	"405DD9B4037F"
+						    type       	"int"))
+					    result     	"int"
+					    exceptions 	"Logical View::java::io::IOException[39CD6BFE0132]"
+					    concurrency 	"Sequential"
+					    opExportControl 	"Public"
+					    uid        	0)
+					(object Operation "readDouble"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedReturn"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedThrows"
+						    value      	"")
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Abstract"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Static"
+						    value      	TRUE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Native"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Synchronized"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Strictfp"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedArgument"
+						    value      	""))
+					    quid       	"405DD9B40380"
+					    parameters 	(list Parameters
+						(object Parameter "file"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"IsFinal"
+							    value      	"false"))
+						    quid       	"405DD9B50005"
+						    type       	"RandomAccessFile"
+						    quidu      	"39CD6C43036C")
+						(object Parameter "len"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"IsFinal"
+							    value      	"false"))
+						    quid       	"405DD9B50006"
+						    type       	"int"))
+					    result     	"double"
+					    exceptions 	"Logical View::java::io::IOException[39CD6BFE0132]"
+					    concurrency 	"Sequential"
+					    opExportControl 	"Public"
+					    uid        	0)
+					(object Operation "readBoolean"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedReturn"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedThrows"
+						    value      	"")
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Abstract"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Static"
+						    value      	TRUE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Native"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Synchronized"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Strictfp"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedArgument"
+						    value      	""))
+					    quid       	"405DD9B5000F"
+					    parameters 	(list Parameters
+						(object Parameter "file"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"IsFinal"
+							    value      	"false"))
+						    quid       	"405DD9B5007E"
+						    type       	"RandomAccessFile"
+						    quidu      	"39CD6C43036C")
+						(object Parameter "len"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"IsFinal"
+							    value      	"false"))
+						    quid       	"405DD9B5007F"
+						    type       	"int"))
+					    result     	"boolean"
+					    exceptions 	"Logical View::java::io::IOException[39CD6BFE0132]"
+					    concurrency 	"Sequential"
+					    opExportControl 	"Public"
+					    uid        	0)
+					(object Operation "readDate"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedReturn"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedThrows"
+						    value      	"")
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Abstract"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Static"
+						    value      	TRUE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Native"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Synchronized"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Strictfp"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedArgument"
+						    value      	""))
+					    quid       	"405DD9B50088"
+					    parameters 	(list Parameters
+						(object Parameter "file"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"IsFinal"
+							    value      	"false"))
+						    quid       	"405DD9B5010A"
+						    type       	"RandomAccessFile"
+						    quidu      	"39CD6C43036C")
+						(object Parameter "len"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"IsFinal"
+							    value      	"false"))
+						    quid       	"405DD9B5010B"
+						    type       	"int"))
+					    result     	"Date"
+					    exceptions 	"Logical View::java::io::IOException[39CD6BFE0132]"
+					    concurrency 	"Sequential"
+					    opExportControl 	"Public"
+					    uid        	0
+					    quidu      	"39CD6D0B03E1")
+					(object Operation "readString"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedReturn"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedThrows"
+						    value      	"")
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Abstract"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Static"
+						    value      	TRUE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Native"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Synchronized"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Strictfp"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedArgument"
+						    value      	""))
+					    quid       	"405DD9B5010C"
+					    parameters 	(list Parameters
+						(object Parameter "file"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"IsFinal"
+							    value      	"false"))
+						    quid       	"405DD9B50178"
+						    type       	"RandomAccessFile"
+						    quidu      	"39CD6C43036C")
+						(object Parameter "len"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"IsFinal"
+							    value      	"false"))
+						    quid       	"405DD9B50182"
+						    type       	"int"))
+					    result     	"String"
+					    exceptions 	"Logical View::java::io::IOException[39CD6BFE0132]"
+					    concurrency 	"Sequential"
+					    opExportControl 	"Public"
+					    uid        	0
+					    quidu      	"39CD6AE1011A"))
+				    module     	"Component View::com::rohitsood::urlybird::util::RandomAccessFileReader"
+				    quidu      	"405CCD660234"
+				    language   	"Java")
+				(object Class "StringUtil"
+				    attributes 	(list Attribute_Set
+					(object Attribute
+					    tool       	"Java"
+					    name       	"BodyDanglingComment"
+					    value      	"")
+					(object Attribute
+					    tool       	"Java"
+					    name       	"GenerateFinalizer"
+					    value      	FALSE)
+					(object Attribute
+					    tool       	"Java"
+					    name       	"GenerateStaticInitializer"
+					    value      	FALSE)
+					(object Attribute
+					    tool       	"Java"
+					    name       	"GenerateInstanceInitializer"
+					    value      	FALSE)
+					(object Attribute
+					    tool       	"Java"
+					    name       	"GenerateDefaultConstructor"
+					    value      	FALSE)
+					(object Attribute
+					    tool       	"Java"
+					    name       	"ReadOnly"
+					    value      	FALSE)
+					(object Attribute
+					    tool       	"Java"
+					    name       	"Final"
+					    value      	TRUE)
+					(object Attribute
+					    tool       	"Java"
+					    name       	"Static"
+					    value      	FALSE)
+					(object Attribute
+					    tool       	"Java"
+					    name       	"Strictfp"
+					    value      	FALSE)
+					(object Attribute
+					    tool       	"Java"
+					    name       	"GenerateFullyQualifiedExtends"
+					    value      	"")
+					(object Attribute
+					    tool       	"Java"
+					    name       	"GenerateFullyQualifiedImplements"
+					    value      	"")
+					(object Attribute
+					    tool       	"Java"
+					    name       	"GenerateCode"
+					    value      	TRUE))
+				    quid       	"405DD9B50218"
+				    documentation 	
+|Purpose
+|@author Rohit Sood
+				    
+				    operations 	(list Operations
+					(object Operation "fixLength"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedReturn"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedThrows"
+						    value      	"")
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Abstract"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Static"
+						    value      	TRUE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	TRUE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Native"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Synchronized"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Strictfp"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedArgument"
+						    value      	""))
+					    quid       	"405DD9B5024A"
+					    documentation 	
+|Returns the same String object unchanged if the length passed in is equal to the length of the String
+|Pads a string with spaces if the string length is less than the length passed in until the string equals the length
+|Prunes the string causing a loss of data - 
+|Coverts to whitespaces if a null <code>String</code> object is passed in
+|
+					    
+					    parameters 	(list Parameters
+						(object Parameter "data"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"IsFinal"
+							    value      	"false"))
+						    quid       	"405DD9B50254"
+						    type       	"String"
+						    quidu      	"39CD6AE1011A")
+						(object Parameter "length"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"IsFinal"
+							    value      	"false"))
+						    quid       	"405DD9B50255"
+						    type       	"int"))
+					    result     	"String"
+					    concurrency 	"Sequential"
+					    opExportControl 	"Public"
+					    uid        	0
+					    quidu      	"39CD6AE1011A")
+					(object Operation "convertToFixedLengthString"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedReturn"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedThrows"
+						    value      	"")
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Abstract"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Static"
+						    value      	TRUE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	TRUE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Native"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Synchronized"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Strictfp"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedArgument"
+						    value      	""))
+					    quid       	"405DD9B5025E"
+					    parameters 	(list Parameters
+						(object Parameter "number"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"IsFinal"
+							    value      	"false"))
+						    quid       	"405DD9B50268"
+						    type       	"int")
+						(object Parameter "length"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"IsFinal"
+							    value      	"false"))
+						    quid       	"405DD9B50269"
+						    type       	"int"))
+					    result     	"String"
+					    concurrency 	"Sequential"
+					    opExportControl 	"Public"
+					    uid        	0
+					    quidu      	"39CD6AE1011A")
+					(object Operation "convertToFixedLengthString"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedReturn"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedThrows"
+						    value      	"")
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Abstract"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Static"
+						    value      	TRUE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	TRUE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Native"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Synchronized"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Strictfp"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedArgument"
+						    value      	""))
+					    quid       	"405DD9B5026A"
+					    parameters 	(list Parameters
+						(object Parameter "number"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"IsFinal"
+							    value      	"false"))
+						    quid       	"405DD9B50272"
+						    type       	"double")
+						(object Parameter "length"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"IsFinal"
+							    value      	"false"))
+						    quid       	"405DD9B50273"
+						    type       	"int"))
+					    result     	"String"
+					    concurrency 	"Sequential"
+					    opExportControl 	"Public"
+					    uid        	0
+					    quidu      	"39CD6AE1011A")
+					(object Operation "convertToFixedLengthString"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedReturn"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedThrows"
+						    value      	"")
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Abstract"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Static"
+						    value      	TRUE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	TRUE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Native"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Synchronized"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Strictfp"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedArgument"
+						    value      	""))
+					    quid       	"405DD9B5027C"
+					    parameters 	(list Parameters
+						(object Parameter "date"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"IsFinal"
+							    value      	"false"))
+						    quid       	"405DD9B50290"
+						    type       	"Date"
+						    quidu      	"39CD6D0B03E1")
+						(object Parameter "length"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"IsFinal"
+							    value      	"false"))
+						    quid       	"405DD9B5029A"
+						    type       	"int")
+						(object Parameter "pattern"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"IsFinal"
+							    value      	"false"))
+						    quid       	"405DD9B5029B"
+						    type       	"String"
+						    quidu      	"39CD6AE1011A"))
+					    result     	"String"
+					    concurrency 	"Sequential"
+					    opExportControl 	"Public"
+					    uid        	0
+					    quidu      	"39CD6AE1011A")
+					(object Operation "pad"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedReturn"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedThrows"
+						    value      	"")
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Abstract"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Static"
+						    value      	TRUE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Native"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Synchronized"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Strictfp"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedArgument"
+						    value      	""))
+					    quid       	"405DD9B5029C"
+					    documentation 	
+|pads the string till the length of the string equals the length required
+|
+|
+					    
+					    parameters 	(list Parameters
+						(object Parameter "data"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"IsFinal"
+							    value      	"false"))
+						    quid       	"405DD9B502AE"
+						    type       	"String"
+						    quidu      	"39CD6AE1011A")
+						(object Parameter "length"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"IsFinal"
+							    value      	"false"))
+						    quid       	"405DD9B502AF"
+						    type       	"int"))
+					    result     	"String"
+					    concurrency 	"Sequential"
+					    opExportControl 	"Private"
+					    uid        	0
+					    quidu      	"39CD6AE1011A")
+					(object Operation "printRecord"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedReturn"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedThrows"
+						    value      	"")
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Abstract"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Static"
+						    value      	TRUE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Native"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Synchronized"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Strictfp"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedArgument"
+						    value      	""))
+					    quid       	"405DD9B502B0"
+					    parameters 	(list Parameters
+						(object Parameter "data"
+						    attributes 	(list Attribute_Set
+							(object Attribute
+							    tool       	"Java"
+							    name       	"IsFinal"
+							    value      	"false"))
+						    quid       	"405DD9B502B8"
+						    type       	"String[]"
+						    quidu      	"39CD6AE1011A"))
+					    result     	"void"
+					    concurrency 	"Sequential"
+					    opExportControl 	"Public"
+					    uid        	0))
+				    class_attributes 	(list class_attribute_list
+					(object ClassAttribute "whitespace"
+					    attributes 	(list Attribute_Set
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Final"
+						    value      	TRUE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Transient"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"Volatile"
+						    value      	FALSE)
+						(object Attribute
+						    tool       	"Java"
+						    name       	"GenerateFullyQualifiedTypes"
+						    value      	FALSE))
+					    quid       	"405DD9B50240"
+					    type       	"char"
+					    initv      	"'\\u0020'"
+					    exportControl 	"Public"
+					    static     	TRUE))
+				    module     	"Component View::com::rohitsood::urlybird::util::StringUtil"
+				    quidu      	"405CCD67027B"
+				    language   	"Java"))
+			    logical_presentations 	(list unit_reference_list)))
+		    logical_presentations 	(list unit_reference_list)))
+	    logical_presentations 	(list unit_reference_list)))
+    logical_presentations 	(list unit_reference_list))

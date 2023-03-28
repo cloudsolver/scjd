@@ -1,0 +1,451 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta http-equiv="content-type"
+ content="text/html; charset=ISO-8859-1">
+  <title>Online Manual</title>
+</head>
+<body>
+<h1 style="text-decoration: underline; text-align: center;">URLyBird
+UserGuide</h1>
+<br>
+<h3 style="text-decoration: underline;"><a name="Contents"></a><a
+ href="Top">Contents</a></h3>
+<a href="#Introduction">Introduction</a><br>
+<a href="#Getting_Started:_Stand_Alone_Mode">Getting Started: Stand
+Alone Mode</a><br>
+<a href="#Getting_Started:_Networked_Mode">Getting Started: Networked
+Mode</a><br>
+<a href="#Getting_Started:_Network_Database_Server">Getting Started:
+Network Database Server</a><br>
+<a href="#Setting_the_Preferences">Setting the Preferences</a><br>
+<a href="#Changing_Modes">Changing Modes</a><br>
+<a href="#Searching_For_Rooms">Searching for Rooms</a><br>
+<a href="#Booking_a_Room">Booking a Room</a><br>
+<a href="#Administration">Administration</a><br>
+<br>
+<hr style="width: 100%; height: 2px;"><br>
+<h2><a name="Introduction"></a><span style="text-decoration: underline;">Introduction</span></h2>
+This is a user guide that will help a new user get started using the
+URLyBird application. <br>
+The guide is separated into sub-sections which focus on
+specific areas of the system.<br>
+Screen shots are included to provide better understanding of the user
+interface.<br>
+The application can be started in three modes:<br>
+<ol>
+  <li>Alone</li>
+  <li>Server</li>
+  <li>Default</li>
+</ol>
+<ul>
+  <li>Alone mode uses a local database and no networking.</li>
+  <li>Server mode starts the remote server and serves network clients</li>
+  <li>Default mode starts the network client and bypasses the local
+databases.</li>
+</ul>
+All configuration is done in the preferences dialog of the user
+interface. This is the first thing that you should do.<br>
+You can modify the preferences in any gui mode, it is reccommended that
+you restart the application for the new settings to take effect.<br>
+<br>
+<a href="#Contents">Back To Top</a><br>
+<hr style="width: 100%; height: 2px;"><br>
+<h2><a name="Getting_Started:_Stand_Alone_Mode"></a><span
+ style="text-decoration: underline;">Getting Started:
+Stand Alone Mode</span></h2>
+To start the application in stand alone mode (Offline Mode), <br>
+go to the
+directory where runme.jar exists, then execute the
+following command:<br>
+<br>
+<tt>java -jar runme.jar alone</tt>
+<br>
+<br>
+Alternatively, you can also provide the fully qualified path name to
+the jar file from any directory. <br>
+<br>
+The
+application will start in Offline mode and the following window will
+open:<br>
+<img src="userguide/images/standAlone.jpg" alt="Stand alone"
+ style="width: 640px; height: 480px;"><br>
+<br>
+<br>
+<br>
+If you are starting the application for the first time:<br>
+<ul>
+  <li>Please be sure that the preferences section is accurate.</li>
+  <li>This can be done through the
+Help&gt;Preferences section.</li>
+  <li>Locate your local database file.<br>
+  </li>
+  <li>Select the correct magic cookie value for the local database
+number.</li>
+</ul>
+<br>
+To make these settings see the <a href="#Setting_the_Preferences">Preferences</a>
+section. <br>
+Your
+preferences file will be saved in the directory from where the
+application was started.<br>
+<br>
+You have the option to dynamically switch to the networked mode, or
+Work Online from the main menu. <br>
+In this mode the gui will communicate to a remote database. This is
+explained in the next section.<br>
+<br>
+<br>
+<a href="userguide.html#Contents">Back To
+Top</a><br>
+<hr style="width: 100%; height: 2px;"><br>
+<h2><a name="Getting_Started:_Networked_Mode"></a><span
+ style="text-decoration: underline;">Getting Started:
+Networked Mode</span></h2>
+<br>
+To start the application in networked mode (Online Mode), be sure that
+the server is running.<br>
+<br>
+For help on starting the server <a
+ href="#Getting_Started:_Network_Database_Server">click here</a>.<br>
+<br>
+Go to the
+directory where the <span style="font-weight: bold;">runme.jar </span>file
+exists, then execute the
+following command:<br>
+<br>
+<tt>java -jar runme.jar</tt>
+<br>
+<br>
+Alternatively, you can also provide the fully qualified path name to
+the jar file from any directory. <br>
+<br>
+Once the command is executed the application starts in Online mode.<br>
+<br>
+<img src="userguide/images/networkMode.jpg" alt="networked mode"
+ style="width: 640px; height: 480px;"><br>
+<br>
+If you are starting the application in Online mode for the first time,<br>
+<ul>
+  <li>Locate your remote server host name - enter the dns or IP.</li>
+  <li>Registry lookup name - has to match the server. </li>
+  <li>Communication protocol (rmi) - currently <span
+ style="font-weight: bold;">rmi</span> is the only supported protocol.</li>
+  <li>Communication Port</li>
+  <li>Local Database and Magic cookie value have no effect.<br>
+  </li>
+</ul>
+You can dynamically switch to offline mode, in which case you will
+disconnect from the remote server and work in offline mode.<br>
+See the <a href="#Getting_Started:_Stand_Alone_Mode">Stand Alone Mode</a>
+section for more information.<br>
+<br>
+To make these settings see the <a href="#Setting_the_Preferences">Preferences</a>
+section.<br>
+<br>
+<a href="#Contents">Back To
+Top</a>
+<hr style="width: 100%; height: 2px;"><br>
+<h2><a name="Getting_Started:_Network_Database_Server"></a><span
+ style="text-decoration: underline;">Getting
+Started: Network Database Server</span></h2>
+The application has a server functionality which serves remote client
+over the network.<br>
+It uses rmi and jrmp for communication and the clients must be
+configured for the server.<br>
+<br>
+To start the network database server:<br>
+<br>
+<ul>
+  <li>Go to the user directory (where
+runme.jar exists)</li>
+  <li>Execute the following command:&nbsp; <tt>java -jar runme.jar
+server</tt></li>
+  <li><tt>Hit ALT-S-S to start the server, or navigate to
+Server&gt;Start Server.</tt></li>
+</ul>
+&nbsp;<br>
+<br>
+<br>
+The server&nbsp; gui window will appear when the command is executed
+see below:<br>
+<br>
+<img style="width: 640px; height: 480px;" alt="server gui"
+ src="userguide/images/serverGui.gif"><br>
+<br>
+If you are starting the server for the first time set the following in
+the preferences:<br>
+<br>
+<ul>
+  <li>Registry lookup name</li>
+  <li>Communication Protocol - only rmi is currently supported.</li>
+  <li>Communication Port.</li>
+  <li>Local database</li>
+  <li>Magic Cookie Value</li>
+  <li>Remote Host has no effect</li>
+</ul>
+<br>
+After the preferences are changed exit and restart the application in
+server mode for the new settings to take effect.<br>
+<br>
+To make these settings see the <a href="#Setting_the_Preferences">Preferences</a>
+section.<br>
+<br>
+To start the server use the menu below and click start server.<br>
+<img style="width: 320px; height: 240px;" alt=""
+ src="userguide/images/serverMenuStart.gif"><br>
+<br>
+On starting the server the following console should appear if all is
+fine.<br>
+<br>
+<img style="width: 471px; height: 351px;" alt=""
+ src="userguide/images/serverConsole.gif"><br>
+<br>
+If the server starts up successfully the "Server ready for e-business"
+will be displayed.<br>
+<br>
+To stop the server use the menu as shown below:<br>
+<br>
+<img style="width: 320px; height: 240px;" alt="server menu"
+ src="userguide/images/serverMenu.gif"><br>
+<br>
+Clicking on stop server brings the following&nbsp; messages to the
+console:<br>
+<br>
+<img style="width: 464px; height: 165px;" alt=""
+ src="userguide/images/serverConsoleStopped.gif"><br>
+<br>
+If you want to exit the server, it is recommended that you stop the
+server before exiting the console.<br>
+Currently there is no provision for the server to run independently of
+the graphical user interface.<br>
+In a possible future release, it may be possible to provide another
+command line arguement <br>
+to start the server gui independently and remotely.<br>
+<br>
+<a href="#Contents">Back To
+Top</a><br>
+<br>
+<hr style="width: 100%; height: 2px;"><br>
+<h2><a name="Setting_the_Preferences"></a><span
+ style="text-decoration: underline;">Setting the Preferences</span></h2>
+The preferences map to the suncertify.properties file. <br>
+<br>
+To go to preferences click Help&gt;Preferences.<br>
+<img style="width: 163px; height: 96px;" alt="Getting to preferences"
+ src="userguide/images/gettingToPreferences.jpg"><br>
+<br>
+Once you click preference you will see the following preferences window:<br>
+<br>
+<br>
+<img style="width: 390px; height: 214px;" alt=""
+ src="userguide/images/preferences.jpg"><br>
+<br>
+Communication Protocol: Set the communication to 'rmi'. This is the
+only protocol currently supported.<br>
+Remote host: The server host name or an IP address. This is used if you
+are in server mode and default (online mode).<br>
+Communication Port: The port name for the registry (usually 1099). If
+in server mode all its clients will need to match the same.<br>
+Registry Lookup Name: The registry name lookup. The unique name in the
+registry.<br>
+Local Database Location: The location of the database. Used in server
+and stand-alone mode.<br>
+<br>
+<a href="#Contents">Back To
+Top</a><br>
+<br>
+<hr style="width: 100%; height: 2px;"><br>
+<h2><a name="Changing_Modes"></a><span
+ style="text-decoration: underline;">Changing Modes</span></h2>
+Application mode may be switched at runtime from Offline (Stand Alone
+Mode) to Online (Networked Mode) and vice-versa.<br>
+To toggle between modes go to Record&gt;Work Online or Record&gt;Work
+Online<br>
+<br>
+<img src="userguide/images/workOffline.jpg" alt="offline"
+ style="width: 200px; height: 146px;"><img
+ src="userguide/images/workOnline.jpg" alt="online"
+ style="width: 199px; height: 159px;"><br>
+<br>
+<br>
+The mode selection changes automatically in the file item to reflect
+the mode to which the user can switch to.<br>
+For eg, if you are in Offline Mode, the Work Online option will be
+available only, and if you are in Online Mode, the Work Offline option
+will be available only.<br>
+If a mode transition is not successful appropriate error messages will
+be displayed in that mode when you use the application.<br>
+The only test to see if the mode transition was successful is to use a
+data access feature.<br>
+<br>
+When switching modes make sure <a href="#Setting_the_Preferences">Preferences</a>
+are set correctly. It is fairly easy to set it once and forget it.<br>
+<br>
+<a href="#Contents">Back To
+Top</a><br>
+<br>
+<hr style="width: 100%; height: 2px;"><br>
+<h2><a name="Searching_For_Rooms"></a><span
+ style="text-decoration: underline;">Searching For Rooms</span></h2>
+To search for rooms , on the menu bar click on Record&gt;Search. <br>
+<img style="width: 161px; height: 186px;" alt="Getting to search screen"
+ src="userguide/images/gettingToSearchScreen.jpg"><br>
+<br>
+This will open a new search window as shown below:<br>
+<br>
+<img style="width: 700px; height: 525px;" alt="Search screen"
+ src="userguide/images/searchScreen.jpg"><br>
+<br>
+The search window consists of 3 areas:<br>
+<br>
+<ol>
+  <li>Search criteria area.</li>
+  <li>Search results area</li>
+  <li>Action buttons area</li>
+</ol>
+<br>
+Enter the search criteria in the search criteria fields for results.
+Keep the following in mind when conducting searches:<br>
+<br>
+<ul>
+  <li>Searches are
+case-sensitive and it searches for non-exact names, instead it tries to
+match the beginning characters only.</li>
+  <li>For example, the search criteria "Ro" will match both "Rohit" and
+"Roman", but "ro" will match neither. </li>
+  <li>Not entering any search criteria
+will match everything.</li>
+  <li>There are currently no limits to the number of records returned. </li>
+  <li>No
+locks are held for the records returned in the search criteria. </li>
+</ul>
+<br>
+After the criteria is entered, you must click on the Search button on
+the bottom of the screen or hit the enter key on any field of the
+search criteria screen section.<br>
+<br>
+Search results if any are displayed in tabular order in the search
+results screen section. <br>
+<br>
+<img style="width: 758px; height: 281px;" alt="Search Results"
+ src="userguide/images/searchResults.jpg"><br>
+<br>
+<a href="#Contents">Back To
+Top</a><a href="file:///C:/work/scjd/URLyBird/userguide.html#Contents"></a><br>
+<br>
+<hr style="width: 100%; height: 2px;"><br>
+<h2><a name="Booking_a_Room"></a><span
+ style="text-decoration: underline;">Booking a Room</span></h2>
+The application allows a room to be booked from the Search window.<br>
+<br>
+3 Easy Steps to Book a Room:<br>
+<ol>
+  <li>Enter a search criteria and hit enter or Search. </li>
+  <li>Select any room by clicking on a row. </li>
+  <li>With a row
+highlighted, click on the "Book It" button. </li>
+</ol>
+<img src="userguide/images/selectRow.jpg" alt="Select a Row"
+ style="width: 681px; height: 52px;"><br>
+<br>
+If&nbsp; you click on "Book It" without first selecting a row, you will
+be prompted to do so. <br>
+<br>
+<br>
+The "Book It" button opens a Confirmation Booking modal dialog as shown
+below.<br>
+<br>
+<img src="userguide/images/bookingDialog.jpg" alt="Booking Dialog"
+ style="width: 248px; height: 135px;"><br>
+<br>
+<ul>
+  <li>Record ID: The id of the record that is being booked. This field
+cannot be edited.</li>
+  <li>Number of Guests: for the booking must be entered and should be
+less
+than or equal to the maximum occupancy for the room.</li>
+  <li>Customer Id: The id of the customer for whom the booking must be
+made.</li>
+</ul>
+<br>
+To reserve the room click the Reserve Room button.<br>
+The following dialog box will open to get more information and confirm
+the booking:<br>
+<img style="width: 248px; height: 135px;" alt="booking dialog complete"
+ src="userguide/images/bookingDialog_complete.jpg"><br>
+<br>
+If the room available date is not within 48 hours of the current time
+then the booking will not be permitted.<br>
+<img style="width: 507px; height: 115px;" alt="invalid 48 hour rule"
+ src="userguide/images/invalid_48hour.jpg"><br>
+<br>
+Similar validation messages are displayed if the customer id is no
+8-digits,<br>
+&nbsp;or the number of guests exceed maximum occupancy of the room etc.<br>
+<br>
+<a href="#Contents">Back To
+Top</a><br>
+<br>
+<hr style="width: 100%; height: 2px;"><br>
+<h2><a name="Administration"></a><span
+ style="text-decoration: underline;">Administration</span></h2>
+Adminstration of data is made possible via the manage record user
+interface.<br>
+The manage record user interface lets you add, edit, and delete records.<br>
+To open the manage record click on the Manage Record menu item as shown
+below.<br>
+<br>
+<img style="width: 143px; height: 136px;" alt=""
+ src="userguide/images/manageRecordMenuItem.gif"><br>
+<br>
+Once the Manage Record menu item is clicked an internal frame will
+appear as shown below:<br>
+<br>
+<img style="width: 328px; height: 353px;" alt=""
+ src="userguide/images/manageRecord.gif"><br>
+<br>
+The manage record internal frame is divided into 3 areas:<br>
+<br>
+<ol>
+  <li>Input area</li>
+  <li>Display area </li>
+  <li>Action area</li>
+</ol>
+The input area is the area where the user provides the record id, <br>
+display area is where the data is displayed and the action area allows<br>
+the user to act on the displayed data.<br>
+<ul>
+  <li>The input area consists of "Enter Record ID:" , a text field and
+a "Go" button.</li>
+  <li>Enter the record id in the text area and hit the "Go" button. </li>
+  <li>If a record is found then the display area is populated with the
+data of the record.</li>
+</ul>
+<br>
+Use the action area's buttons to act upon the data that is displayed in
+the display area.<br>
+The action buttons have interaction between each other and the display
+and input area.<br>
+<br>
+<img style="width: 318px; height: 34px;" alt=""
+ src="userguide/images/manageRecordButtons.gif"><br>
+<br>
+Keep the following in mind when interacting with the action area.<br>
+<ul>
+  <li>Buttons will be enabled or disabled based on what actions are
+permitted.</li>
+  <li>If the Add button is clicked the data displayed in the display
+area will be added onto the database.</li>
+  <li>If the edit button is clicked all the fields of the display area
+will become enabled and available for updating.</li>
+  <li>Clicking on the save button will save the modified data into the
+database for that record id.</li>
+  <li>Delete will logically delete the data from the database file.</li>
+  <li>Cancel clears all fields.</li>
+</ul>
+<br>
+<a href="#Contents">Back To
+Top</a><br>
+</body>
+</html>

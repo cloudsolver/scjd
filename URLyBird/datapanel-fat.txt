@@ -1,0 +1,259 @@
+     /**
+       * Accessor for the city text field.
+       * @return The <tt>CommonTextField</tt> which holds the city name.
+       */
+      public CommonTextField getCityTextField()
+      {
+          return cityTextField;
+      }
+
+      /**
+       * Mutator for the city text field.
+       * @param cityTextField The <tt>CommonTextField</tt> which holds the city name.
+       */
+      public void setCityTextField(CommonTextField cityTextField)
+      {
+          this.cityTextField = cityTextField;
+      }
+
+      /**
+       * Accessor for the city text field.
+       * @return The <tt>CommonTextField</tt> which holds the city name.
+       */
+      public JLabel getCityTextLabel()
+      {
+          return cityTextLabel;
+      }
+
+      /**
+       * Mutator for the city text label.
+       * @param cityTextLabel The <tt>CommonTextField</tt> which holds the city name.
+       */
+      public void setCityTextLabel(JLabel cityTextLabel)
+      {
+          this.cityTextLabel = cityTextLabel;
+      }
+
+      /**
+       * 
+       * @return
+       */
+      public CommonTextField getCustomerTextField()
+      {
+          return customerTextField;
+      }
+
+      /**
+       * @param customerTextField
+       */
+      public void setCustomerTextField(CommonTextField customerTextField)
+      {
+          this.customerTextField = customerTextField;
+      }
+
+      /**
+       * @return
+       */
+      public JLabel getCustomerTextLabel()
+      {
+          return customerTextLabel;
+      }
+
+      /**
+       * @param customerTextLabel
+       */
+      public void setCustomerTextLabel(JLabel customerTextLabel)
+      {
+          this.customerTextLabel = customerTextLabel;
+      }
+
+      /**
+       * @return
+       */
+      public CommonTextField getDateTextField()
+      {
+          return dateTextField;
+      }
+
+      /**
+       * @param dateTextField
+       */
+      public void setDateTextField(CommonTextField dateTextField)
+      {
+          this.dateTextField = dateTextField;
+      }
+
+      /**
+       * @return
+       */
+      public JLabel getDateTextLabel()
+      {
+          return dateTextLabel;
+      }
+
+      /**
+       * @param dateTextLabel
+       */
+      public void setDateTextLabel(JLabel dateTextLabel)
+      {
+          this.dateTextLabel = dateTextLabel;
+      }
+
+      /**
+       * @return
+       */
+      public CommonTextField getHotelTextField()
+      {
+          return hotelTextField;
+      }
+
+      /**
+       * @param hotelTextField
+       */
+      public void setHotelTextField(CommonTextField hotelTextField)
+      {
+          this.hotelTextField = hotelTextField;
+      }
+
+      /**
+       * @return
+       */
+      public JLabel getHotelTextLabel()
+      {
+          return hotelTextLabel;
+      }
+
+      /**
+       * @param hotelTextLabel
+       */
+      public void setHotelTextLabel(JLabel hotelTextLabel)
+      {
+          this.hotelTextLabel = hotelTextLabel;
+      }
+   /**
+       * @return
+       */
+      public CommonTextField getMaxTextField()
+      {
+          return maxTextField;
+      }
+
+      /**
+       * @param maxTextField
+       */
+      public void setMaxTextField(CommonTextField maxTextField)
+      {
+          this.maxTextField = maxTextField;
+      }
+
+      /**
+       * @return
+       */
+      public JLabel getMaxTextLabel()
+      {
+          return maxTextLabel;
+      }
+
+      /**
+       * @param maxTextLabel
+       */
+      public void setMaxTextLabel(JLabel maxTextLabel)
+      {
+          this.maxTextLabel = maxTextLabel;
+      }
+
+      /**
+       * @return
+       */
+      public CommonTextField getPriceTextField()
+      {
+          return priceTextField;
+      }
+
+      /**
+       * @param priceTextField
+       */
+      public void setPriceTextField(CommonTextField priceTextField)
+      {
+          this.priceTextField = priceTextField;
+      }
+
+      /**
+       * @return
+       */
+      public JLabel getPriceTextLabel()
+      {
+          return priceTextLabel;
+      }
+
+      /**
+       * @param priceTextLabel
+       */
+      public void setPriceTextLabel(JLabel priceTextLabel)
+      {
+          this.priceTextLabel = priceTextLabel;
+      }
+
+      /**
+       * @return
+       */
+      public CommonTextField getRecordTextField()
+      {
+          return recordTextField;
+      }
+
+      /**
+       * @param recordTextField
+       */
+      public void setRecordTextField(CommonTextField recordTextField)
+      {
+          this.recordTextField = recordTextField;
+      }
+
+      /**
+       * @return
+       */
+      public JLabel getRecordTextLabel()
+      {
+          return recordTextLabel;
+      }
+
+      /**
+       * @param recordTextLabel
+       */
+      public void setRecordTextLabel(JLabel recordTextLabel)
+      {
+          this.recordTextLabel = recordTextLabel;
+      }
+
+      /**
+       * @return
+       */
+      public CommonTextField getSmokingTextField()
+      {
+          return smokingTextField;
+      }
+
+      /**
+       * @param smokingTextField
+       */
+      public void setSmokingTextField(CommonTextField smokingTextField)
+      {
+          this.smokingTextField = smokingTextField;
+      }
+
+      /**
+       * @return
+       */
+      public JLabel getSmokingTextLabel()
+      {
+          return smokingTextLabel;
+      }
+
+      /**
+       * @param smokingTextLabel
+       */
+      public void setSmokingTextLabel(JLabel smokingTextLabel)
+      {
+          this.smokingTextLabel = smokingTextLabel;
+      }

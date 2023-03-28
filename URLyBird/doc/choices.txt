@@ -1,0 +1,34 @@
+Choices
+
+(I) Introduction
+
+	This document outlines the architectural and design considerations for the requirement of the project.
+
+(II)Architectural Considerations
+
+	The system is layered in terms of packages. The gui connects to the network client in server mode. 
+	In stand-alone mode, the gui can connect to the data layer directly.
+	
+	When in the server mode, the gui will connect to the network client, the client will delegate requests
+	to the server component. The server will connect with the data layer, the data layer is reponsible exclusively
+	to handle data and connect with the underlying database. It also ensures locking and thread synchronization.
+	
+	The server is available over port 1099, connections are made using JRMP
+
+(III) Design Considerations
+
+	The business entity model lives under the com.rohitsood.urlybird.business package. Business entities have no knowledge
+	of how they are persisted, the data package knows how to persist these objects.
+	
+	Business Object -> Value Object -> Data Access Object
+	
+	BO uses DAO,	DAO uses VO,	BO modifies VO
+
+
+(IV) Package Dependencies
+
+	The data package exclusively has control over the DB file
+	The util package is responsible for common functionality required by any package or layer. All classes are independent,
+	other packages may hold dependencies with the classes in this package. 
+
+
